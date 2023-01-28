@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(211, 211, 211);
+    font-family: "Work_sans";
+}
+@font-face {
+    font-family: "Work_sans" ;
+    src: url(../assets/font/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf);
+}: 
+@font-face {
+    font-family: "Open-Sans" ;
+    src: url(../assets/font/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+h1, h2, h3, h4{
+    font-family: "Open-Sans";
+    color: rgb(175, 7, 1);
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    font-size: 2rem;
+}
+#top{
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    border-radius: 10%;
+}
+nav{
+    text-align: center;
+}
+.menu{
+    background-color: rgba(255, 255, 255, 0.719);
+    list-style: none;
+    padding: 0%;
+    width: 90%;
+    height: 60px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
