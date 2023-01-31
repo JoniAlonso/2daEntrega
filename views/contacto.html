@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>After Contacto</title>
 </head>
 <body>
@@ -31,6 +32,44 @@
                 </ul>
             </nav>
     </header>
+
+<!--Formulario para contacto--->
+
+    <section>
+        <h2>Contactanos</h2>
+
+        <h3>Cualquiero informacion o datos que quieras aportar para sumar a esta comunidad o asi tambien dudas que tengas, nos podes contactar.</h3>
+
+
+       
+        <form>
+            <fieldset>
+                <legend>Ingresa tus datos</legend>        
+                    <!--Inputs para texto-->
+                    <label for="nombre">Nombre y Apellido:</label>
+                    <input type="text" id="nombre">
+
+                    <!--Inputs para numero de telefono-->
+                    <label for="telefono">Numero de telefono:</label>
+                    <input type="tel" name="telefono" id="telefono">
+
+                    <!--Inputs para email-->
+
+                    <label for="correo">Correo electronico:</label>
+                    <input type="email" name="correo" id="correo">
+
+                    <!--Textarea-->
+                    <label for="mensaje">Dejanos un comentario:</label>
+                    <textarea name="mensaje" id="" cols="20" rows="5"></textarea>
+
+                    <!--Input de Botones-->
+
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+            <fieldset> 
+        </form>
+         
+    </section>
     
 </body>
 </html>
