@@ -1,0 +1,20 @@
+.aside { 
+    position: relative;
+    padding: 1.2rem;
+    grid-area: aside;
+    justify-content: center;
+    display: flex; }
+
+    
+    video{
+        position: relative ;
+        top: 50;
+        left: 31;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 21px;
+        
+        
+    
+    }

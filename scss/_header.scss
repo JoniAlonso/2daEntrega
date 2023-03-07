@@ -1,0 +1,161 @@
+.header { 
+    background-color: silver;
+    grid-area: header; 
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    height: 4rem;
+}
+.header img{
+    
+    width: 70px;
+    border-radius: 40%;
+
+}
+.header nav ul{
+    
+    list-style: none;
+    padding: 1rem;
+    width: 90%;
+    height: 60px;
+    margin: 14px auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px
+    
+}
+.header nav ul a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem;
+    
+
+}
+
+.menu .submenu{ 
+    position:absolute;
+    list-style-type: none;
+    display: none;}
+
+.header nav ul a:hover{
+    background-color: rgba(13, 13, 75, 0.76);
+    color: white;
+    border-radius:7px;
+    
+}
+
+
+.menu .submenu .sub_item{
+    font-size: 1rem;
+    display: flex;}
+
+.menu .item a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1rem;} 
+
+.menu .item:hover .submenu{
+    display: flex;
+    flex-direction: column;} 
+
+/*Navegador para celular*/
+
+#menu1, #menu-check{
+display: none;
+}
+@media only screen and (max-width: 700px) {
+.header h1 {
+    margin: 0;
+}
+.header h1 a{
+    padding: 0;
+}
+
+.header div.contendor {
+    display: flex;
+    place-content: space-between;
+}
+#menu-check:not(:checked) ~ nav {
+    display: none;
+}
+#menu-check:checked ~ nav{
+    display: block;
+}
+
+#menu1 {
+    display: block;
+    color: black;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: .3rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 9;
+}
+
+#menu1:hover {
+    color: #a79e9e;
+    background-color: #000000;
+}
+
+#menu-cerrar {
+    display: none;
+}
+#menu-check:checked ~ label #menu-abrir {
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar{
+    display: block;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: none;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    opacity: 0.8;
+    color: #000;
+    font-size: 1.4rem;
+
+}
+
+.item{
+    color: rgb(0, 0, 0);
+    background: none;  
+}
+
+
+nav ul.menu{
+    display: block;
+    text-align: right;
+}
+ul.menu .submenu{
+    border: 0;
+    border-radius: 0;
+    
+}
+
+menu .submenu:hover{
+    background: none;
+
+}
+
+main{ 
+    text-align: center;
+}
+aside{
+    text-align: center;
+}
+
+}
+
+
+/*Termina nav para celulares*/
+/*No se que toque pero no me deja sacar el hover cuando es para celular*/

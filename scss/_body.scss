@@ -1,0 +1,25 @@
+body{
+    background-color: #b8c6db;
+    background-image: linear-gradient(3149deg, #b8c6db 25%, #f5f7fa 74%);
+    font-family: "Work_Sans";
+    
+    }
+
+    .contenedor{
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 2px 2px;
+        grid-template-areas: 
+        "header header header header"
+        "main main aside aside"
+        "main main aside aside"
+        "main main aside aside"
+        "main main aside aside"
+        "footer footer footer footer";
+    }
+
+
+   
